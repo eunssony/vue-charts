@@ -3,8 +3,6 @@
 </template>
 
 <script>
-import Chart from "chart.js/auto";
-
 export default {
   mounted() {
     const labels = ["January", "February", "March", "April", "May", "June"];
@@ -27,7 +25,7 @@ export default {
       options: {},
     };
 
-    const lineChart = new Chart(this.$refs.lineChart, config);
+    const lineChart = new this.$_Chart(this.$refs.lineChart, config);
     console.log(lineChart);
   },
 };
