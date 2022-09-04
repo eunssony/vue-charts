@@ -1,5 +1,5 @@
 <template>
-  <canvas id="myChart" width="400" height="400"></canvas>
+  <canvas id="barChart" width="400" height="400"></canvas>
 </template>
 
 <script>
@@ -7,8 +7,8 @@ import Chart from "chart.js/auto";
 
 export default {
   mounted() {
-    const ctx = document.getElementById("myChart");
-    const myChart = new Chart(ctx, {
+    const ctx = document.getElementById("barChart");
+    const barChart = new Chart(ctx, {
       type: "bar",
       data: {
         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -45,7 +45,7 @@ export default {
       },
     });
 
-    console.log(myChart);
+    console.log(barChart);
   },
 };
 </script>
